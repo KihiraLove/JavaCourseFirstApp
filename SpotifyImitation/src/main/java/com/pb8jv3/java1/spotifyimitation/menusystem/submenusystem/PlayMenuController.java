@@ -1,9 +1,9 @@
-package com.pb8jv3.java1.spotifyimitation.menusystem.submenucontroller;
+package com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem;
 
 import com.pb8jv3.java1.spotifyimitation.datamanager.DataManager;
 import com.pb8jv3.java1.spotifyimitation.menusystem.MainMenuController;
 import com.pb8jv3.java1.spotifyimitation.menusystem.MenuPrinter;
-import com.pb8jv3.java1.spotifyimitation.menusystem.submenucontroller.subsubmenucontroller.PlayAllSubmenuController;
+import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.playmenusubmenusystem.PlayAllSubmenuController;
 
 /**
  *

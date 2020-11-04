@@ -42,7 +42,10 @@ public class Playlist {
     }
     
     public void listSongs(){
-	songs.forEach(song -> {System.out.println(song.getName());
-	});
+	songs.forEach(song -> {System.out.println(song.getName());});
+    }
+    
+    public void playSongs(){
+    	songs.forEach(song -> {System.out.println("Now playing: " + song.getName());});
     }
 }

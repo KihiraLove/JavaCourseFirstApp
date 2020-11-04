@@ -21,14 +21,15 @@ public class AlbumManager {
 	    }
 	});
     }
-
-    public void listSongsFromAlbum(String name) {
-	albums.get(name).listSongs();
+    
+    public Album getAlbum(String name){
+	if(albums.containsKey(name))
+	    return albums.get(name);
+	else
+	    return null;
     }
     
     public void listAlbums() {
-	albums.keySet().forEach(albumName -> {
-	    System.out.println(albumName);
-	});
+	albums.keySet().forEach(albumName -> {System.out.println(albumName);});
     }
 }

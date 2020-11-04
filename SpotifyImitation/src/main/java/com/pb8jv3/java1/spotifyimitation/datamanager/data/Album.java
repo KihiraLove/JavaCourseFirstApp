@@ -26,6 +26,10 @@ public class Album {
 	songs.forEach(song -> {System.out.println(song.getName());});
     }
     
+    public void playSongs() {
+	songs.forEach(song -> {System.out.println("Now playing: " + song.getName());});
+    }
+    
     public String getName() {
 	return name;
     }

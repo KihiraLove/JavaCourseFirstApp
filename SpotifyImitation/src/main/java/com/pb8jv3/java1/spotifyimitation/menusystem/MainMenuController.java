@@ -1,6 +1,6 @@
 package com.pb8jv3.java1.spotifyimitation.menusystem;
 
-import com.pb8jv3.java1.spotifyimitation.menusystem.submenucontroller.PlayMenuController;
+import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.PlayMenuController;
 import com.pb8jv3.java1.spotifyimitation.datamanager.DataManager;
 import java.util.Scanner;
 /**
