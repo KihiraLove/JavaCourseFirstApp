@@ -11,15 +11,15 @@ import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.playmenusubmen
  *
  * @author Kertesz Domonkos PB8JV3
  */
-public class PlayMenuController {
+public class DataEditorMenuController {
 
-    private PlayMenuController() {
+    private DataEditorMenuController() {
     }
-    
-    public static void init(DataManager dataManager){
+
+    public static DataManager init(DataManager dataManager){
 	Boolean breaker = true;
 	while(breaker){
-	    MenuPrinter.printPlayMenu();
+	    MenuPrinter.printDataEditorMenu();
 	    switch (MainMenuController.userInput()){
 	        case "1":
 		    PlayAllSubmenuController.init(dataManager);
@@ -38,5 +38,6 @@ public class PlayMenuController {
 		    System.out.println("Invalid input");
 	    }
 	}
+	return dataManager;
     }
 }
