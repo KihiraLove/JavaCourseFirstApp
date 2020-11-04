@@ -43,6 +43,8 @@ public class WriteToFile {
 			System.out.println("An error occurred: " + e.getMessage());
 		    }
 		});
+		System.out.println("Songs written to " + FileLocation.getPlaylistPath().toString() + playlist.getName());
+		writer.close();
 	    } catch (IOException e) {
 		System.out.println("An error occurred: " + e.getMessage());
 	    }
