@@ -26,10 +26,17 @@ public class PlaylistManager {
     }
     
     public Playlist getPlaylist(String name){
-	return playlists.get(name);
+	if(playlists.containsKey(name))
+	    return playlists.get(name);
+	else
+	    return null;
     }
     
     public void removePlaylist(String name){
 	playlists.remove(name);
+    }
+    
+    public void listPlaylists(){
+	playlists.keySet().forEach(name -> System.out.println(name));
     }
 }

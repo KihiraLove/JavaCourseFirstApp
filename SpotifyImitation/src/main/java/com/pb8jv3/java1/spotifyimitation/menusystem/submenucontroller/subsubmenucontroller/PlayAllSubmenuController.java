@@ -22,37 +22,32 @@ public class PlayAllSubmenuController {
 	Boolean breaker = true;
 	while(breaker){
 	    MenuPrinter.printPlayAllSubmenu();
-	    try{
-		switch (MainMenuController.userInput()){
-		    case 1:
-			List<Song> newestFirst = new ArrayList<>(dataManager.getSongManager().getSongs());
-			Collections.reverse(newestFirst);
-			newestFirst.forEach(song -> {
-			    System.out.println("Now playing: " + song.getName());
-			});
-			break;
-		    case 2:
-			dataManager.getSongManager().getSongs().forEach(song -> {
-			    System.out.println("Now playing: " + song.getName());
-			});
-			break;
-		    case 3:
-			List<Song> randomOrder = new ArrayList<>(dataManager.getSongManager().getSongs());
-			Collections.shuffle(randomOrder);
-			randomOrder.forEach(song -> {
-			    System.out.println("Now playing: " + song.getName());
-			});
-			break;
-		    case 4:
-			breaker = false;
-			break;
-		    default:
-			MenuPrinter.separatorLine();
-			System.out.println("Invalid input");
-		}
-	    } catch(InputMismatchException e){
-		MenuPrinter.separatorLine();
-		System.out.println("Please enter a number");
+	    switch (MainMenuController.userInput()){
+		case "1":
+		    List<Song> newestFirst = new ArrayList<>(dataManager.getSongManager().getSongs());
+		    Collections.reverse(newestFirst);
+		    newestFirst.forEach(song -> {
+			System.out.println("Now playing: " + song.getName());
+		    });
+		    break;
+		case "2":
+		    dataManager.getSongManager().getSongs().forEach(song -> {
+			System.out.println("Now playing: " + song.getName());
+		    });
+		    break;
+		case "3":
+		    List<Song> randomOrder = new ArrayList<>(dataManager.getSongManager().getSongs());
+		    Collections.shuffle(randomOrder);
+		    randomOrder.forEach(song -> {
+			System.out.println("Now playing: " + song.getName());
+		    });
+		    break;
+		case "4":
+		    breaker = false;
+		    break;
+		default:
+		    MenuPrinter.separatorLine();
+		    System.out.println("Invalid input");
 	    }
 	}
     }
