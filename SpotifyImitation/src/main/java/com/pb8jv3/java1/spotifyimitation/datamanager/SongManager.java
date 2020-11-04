@@ -26,4 +26,8 @@ public class SongManager {
     public List<Song> getSongs() {
 	return songs;
     }
+    
+    public void listSongs(){
+	songs.forEach(song -> System.out.println(song.getName()));
+    }
 }

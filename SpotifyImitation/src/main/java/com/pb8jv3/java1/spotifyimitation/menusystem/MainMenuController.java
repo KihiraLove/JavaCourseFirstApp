@@ -32,11 +32,12 @@ public class MainMenuController {
 		    break;
 		case "3":
 		    breaker = false;
+		    MenuPrinter.separatorLine();
 		    break;
 		default:
 		    MenuPrinter.separatorLine();
 		    System.out.println("Invalid input");
-		}
+	    }  
 	}
     }
     

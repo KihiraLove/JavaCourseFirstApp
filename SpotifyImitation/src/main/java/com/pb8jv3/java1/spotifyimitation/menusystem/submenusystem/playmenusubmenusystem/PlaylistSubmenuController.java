@@ -17,19 +17,21 @@ public class PlaylistSubmenuController {
 	Boolean breaker = true;
 	while(breaker){
 	    MenuPrinter.printPlaylistSubmenu();
+	    dataManager.getPlaylistManager().listPlaylists();
 	    String input = MainMenuController.userInput();
 	    switch (input){
 		case "1":
 		    breaker = false;
+		    MenuPrinter.separatorLine();
 		    break;
 		default:
-		    dataManager.getPlaylistManager().listPlaylists();
 		    Playlist playlist = dataManager.getPlaylistManager().getPlaylist(input);
 		    if(playlist != null){
 			playlist.playSongs();
 		    } else {
 			System.out.println("Playlist doesn't exist");
 		    }
+		    MenuPrinter.separatorLine();
 	    }
 	}
     }

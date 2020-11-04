@@ -32,6 +32,7 @@ public class PlayMenuController {
 		    break;
 		case "4":
 		    breaker = false;
+		    MenuPrinter.separatorLine();
 		    break;
 		default:
 		    MenuPrinter.separatorLine();

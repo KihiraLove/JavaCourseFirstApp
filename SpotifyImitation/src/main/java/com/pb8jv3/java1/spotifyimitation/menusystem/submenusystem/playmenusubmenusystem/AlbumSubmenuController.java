@@ -17,19 +17,21 @@ public class AlbumSubmenuController {
 	Boolean breaker = true;
 	while(breaker){
 	    MenuPrinter.printPlaylistSubmenu();
+	    dataManager.getAlbumManager().listAlbums();
 	    String input = MainMenuController.userInput();
 	    switch (input){
 		case "1":
 		    breaker = false;
+		    MenuPrinter.separatorLine();
 		    break;
 		default:
-		    dataManager.getAlbumManager().listAlbums();
 		    Album album = dataManager.getAlbumManager().getAlbum(input);
 		    if(album != null){
 			album.playSongs();
 		    } else {
 			System.out.println("Album doesn't exist");
 		    }
+		    MenuPrinter.separatorLine();
 	    }
 	}
     }

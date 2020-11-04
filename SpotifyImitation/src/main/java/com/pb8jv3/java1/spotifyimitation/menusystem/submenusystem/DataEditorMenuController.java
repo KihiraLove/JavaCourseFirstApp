@@ -3,9 +3,9 @@ package com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem;
 import com.pb8jv3.java1.spotifyimitation.datamanager.DataManager;
 import com.pb8jv3.java1.spotifyimitation.menusystem.MainMenuController;
 import com.pb8jv3.java1.spotifyimitation.menusystem.MenuPrinter;
-import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.playmenusubmenusystem.AlbumSubmenuController;
-import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.playmenusubmenusystem.PlayAllSubmenuController;
-import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.playmenusubmenusystem.PlaylistSubmenuController;
+import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.dataeditorsubmenusystem.AlbumDataEditorSubmenuController;
+import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.dataeditorsubmenusystem.PlaylistDataEditorSubmenuController;
+import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.dataeditorsubmenusystem.SongDataEditorSubmenuController;
 
 /**
  *
@@ -22,16 +22,17 @@ public class DataEditorMenuController {
 	    MenuPrinter.printDataEditorMenu();
 	    switch (MainMenuController.userInput()){
 	        case "1":
-		    PlayAllSubmenuController.init(dataManager);
+		    dataManager = SongDataEditorSubmenuController.init(dataManager);
 		    break;
 		case "2":
-		    PlaylistSubmenuController.init(dataManager);
+		    dataManager = AlbumDataEditorSubmenuController.init(dataManager);
 		    break;
 		case "3":
-		    AlbumSubmenuController.init(dataManager);
+		    dataManager = PlaylistDataEditorSubmenuController.init(dataManager);
 		    break;
 		case "4":
 		    breaker = false;
+		    MenuPrinter.separatorLine();
 		    break;
 		default:
 		    MenuPrinter.separatorLine();
