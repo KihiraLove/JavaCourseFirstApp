@@ -2,19 +2,19 @@ cmd.exe
 /X
 /C
 ""C:\Program Files\Java\jdk1.8.0_261\jre\..\bin\javadoc.exe" @options @argfile"
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\allclasses-frame.html = 1604570492293
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\allclasses-noframe.html = 1604570492300
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\argfile = 1604570489372
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\constant-values.html = 1604570491648
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\deprecated-list.html = 1604570492280
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\help-doc.html = 1604570492334
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\index-all.html = 1604570492262
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\index.html = 1604570492307
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\options = 1604570489370
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\overview-frame.html = 1604570491246
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\overview-summary.html = 1604570492317
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\overview-tree.html = 1604570492241
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\package-list = 1604570491237
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\script.js = 1604570492347
-C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\serialized-form.html = 1604570491667
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\allclasses-frame.html = 1604570591714
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\allclasses-noframe.html = 1604570591721
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\argfile = 1604570589362
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\constant-values.html = 1604570591064
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\deprecated-list.html = 1604570591699
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\help-doc.html = 1604570591755
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\index-all.html = 1604570591675
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\index.html = 1604570591728
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\options = 1604570589361
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\overview-frame.html = 1604570590660
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\overview-summary.html = 1604570591740
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\overview-tree.html = 1604570591653
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\package-list = 1604570590657
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\script.js = 1604570591771
+C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\serialized-form.html = 1604570591082
 C:\Users\illum\Documents\GitHub\JavaCourseFirstApp\SpotifyImitation\target\site\apidocs\stylesheet.css = 1604162340147
