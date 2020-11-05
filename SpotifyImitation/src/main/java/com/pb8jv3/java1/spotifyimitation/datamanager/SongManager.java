@@ -19,8 +19,9 @@ public class SongManager {
 	this.songs = songs;
     }
     
-    public void addSong(Song song) {
+    public SongManager addSong(Song song) {
 	songs.add(song);
+	return this;
     }
 
     public List<Song> getSongs() {

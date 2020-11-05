@@ -21,8 +21,9 @@ public class PlaylistManager {
 	return playlists;
     }
     
-    public void addPlaylist(String name, List<Song> songs){
+    public PlaylistManager addPlaylist(String name, List<Song> songs){
 	playlists.put(name, new Playlist(name, songs));
+	return this;
     }
     
     public Playlist getPlaylist(String name){

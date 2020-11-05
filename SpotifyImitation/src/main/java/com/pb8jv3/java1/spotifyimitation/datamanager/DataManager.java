@@ -26,4 +26,16 @@ public class DataManager {
     public PlaylistManager getPlaylistManager() {
 	return playlistManager;
     }
+
+    public void setSongManager(SongManager songManager) {
+	this.songManager = songManager;
+    }
+
+    public void setAlbumManager(AlbumManager albumManager) {
+	this.albumManager = albumManager;
+    }
+
+    public void setPlaylistManager(PlaylistManager playlistManager) {
+	this.playlistManager = playlistManager;
+    }
 }

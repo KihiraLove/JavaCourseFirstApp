@@ -1,4 +1,10 @@
 com.pb8jv3.java1.spotifyimitation
 com.pb8jv3.java1.spotifyimitation.datamanager
 com.pb8jv3.java1.spotifyimitation.datamanager.data
-com.pb8jv3.java1.spotifyimitation.datamanager.filemanager
+com.pb8jv3.java1.spotifyimitation.datamanager.data.utility
+com.pb8jv3.java1.spotifyimitation.filemanager
+com.pb8jv3.java1.spotifyimitation.filemanager.utility
+com.pb8jv3.java1.spotifyimitation.menusystem
+com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem
+com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.dataeditorsubmenusystem
+com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.playmenusubmenusystem

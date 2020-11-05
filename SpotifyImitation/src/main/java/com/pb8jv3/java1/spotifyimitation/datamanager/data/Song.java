@@ -8,7 +8,7 @@ public class Song {
     private String name;
     private String artist;
     private String style;
-    private Integer lenght;
+    private Integer length;
     private String albumName;
 
     public Song() {
@@ -18,7 +18,7 @@ public class Song {
 	this.name = name;
 	this.artist = artist;
 	this.style = style;
-	this.lenght = lenght;
+	this.length = lenght;
 	this.albumName = albumName;
     }
 
@@ -46,12 +46,12 @@ public class Song {
 	this.style = style;
     }
 
-    public Integer getLenght() {
-	return lenght;
+    public Integer getLength() {
+	return length;
     }
 
-    public void setLenght(Integer lenght) {
-	this.lenght = lenght;
+    public void setLength(Integer lenght) {
+	this.length = lenght;
     }
 
     public String getAlbumName() {
@@ -63,6 +63,14 @@ public class Song {
     }
     
     public String printable(){
-	return this.getName() + ";" + this.getArtist() + ";" + this.getStyle() + ";" + this.getLenght() + ";" + this.getAlbumName();
+	return this.getName() + ";" + this.getArtist() + ";" + this.getStyle() + ";" + this.getLength() + ";" + this.getAlbumName();
+    }
+    
+    public void printAllData() {
+	System.out.println("Name: " + name + "\t" +
+			    "Artist: " + artist + "\t" +
+			    "Style: " + style + "\t" +
+			    "Album: " + albumName
+	);
     }
 }

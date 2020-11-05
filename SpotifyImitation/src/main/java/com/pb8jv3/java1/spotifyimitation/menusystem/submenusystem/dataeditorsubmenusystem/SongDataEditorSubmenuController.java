@@ -1,5 +1,6 @@
 package com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.dataeditorsubmenusystem;
 
+import com.pb8jv3.java1.spotifyimitation.datamanager.AlbumManager;
 import com.pb8jv3.java1.spotifyimitation.datamanager.DataManager;
 import com.pb8jv3.java1.spotifyimitation.datamanager.data.Song;
 import com.pb8jv3.java1.spotifyimitation.menusystem.MainMenuController;
@@ -18,22 +19,68 @@ public class SongDataEditorSubmenuController {
 	Boolean breaker = true;
 	while(breaker){
 	    MenuPrinter.printSongDataEditorSubmenu();
-	    dataManager.getSongManager().listSongs();
 	    String input = MainMenuController.userInput();
 	    switch (input){
 		case "1":
+		    Song song = new Song();
+		    do{
+			System.out.println("Enter song name: ");
+			input = MainMenuController.userInput();
+			if(!input.equals("")){
+			    song.setName(input);
+			} else {
+			    System.out.println("Invalid input");
+			}
+		    } while(input.equals(""));
+		    do{
+			System.out.println("Enter songa artist: ");
+			input = MainMenuController.userInput();
+			if(!input.equals("")){
+			    song.setArtist(input);
+			} else {
+			    System.out.println("Invalid input");
+			}
+		    } while(input.equals(""));
+		    do{
+			System.out.println("Enter songs style: ");
+			input = MainMenuController.userInput();
+			if(!input.equals("")){
+			    song.setStyle(input);
+			} else {
+			    System.out.println("Invalid input");
+			}
+		    } while(input.equals(""));
+		    do{
+			System.out.println("Enter songs album name: ");
+			input = MainMenuController.userInput();
+			if(!input.equals("")){
+			    song.setAlbumName(input);
+			} else {
+			    System.out.println("Invalid input");
+			}
+		    } while(input.equals(""));
+		    do{
+			System.out.println("Enter songs length: ");
+			input = MainMenuController.userInput();
+			if(!input.equals("")){
+			    try{
+				song.setLength(Integer.parseInt(input));
+			    } catch(NumberFormatException e) {
+				System.out.println("Invalid input");
+			    }
+			} else {
+			    System.out.println("Invalid input");
+			}
+		    } while(input.equals(""));
+		    dataManager.setSongManager(dataManager.getSongManager().addSong(song));
+		    dataManager.setAlbumManager(new AlbumManager(dataManager.getSongManager()));
+		    break;
+		case "2":
 		    breaker = false;
 		    MenuPrinter.separatorLine();
 		    break;
 		default:
-		    dataManager.getSongManager().getSongs().forEach(song -> {
-			if(song.getName().equals(input)){
-			    
-			} else {
-			    System.out.println("Song doesn't exist");
-			}
-		});
-
+		    System.out.println("Invalid input");
 	    }
 	}
 	return dataManager;

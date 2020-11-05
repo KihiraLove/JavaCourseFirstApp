@@ -51,23 +51,15 @@ public class MenuPrinter {
     public static void printDataEditorMenu(){
 	MenuPrinter.separatorLine();
 	System.out.println("1. Open song data editor submenu" + "\n" +
-			    "2. Open album data editor submenu" + "\n" +
-			    "3. Open playlist data editor submenu" + "\n" +
-			    "4. Exit"
+			    "2. Open playlist data editor submenu" + "\n" +
+			    "3. Exit"
 	);
     }
     
     public static void printSongDataEditorSubmenu(){
 	MenuPrinter.separatorLine();
-	System.out.println("Please chose a song, type its name to enter it" + "\n" +
-			    "1. Exit"
-	);
-    }
-    
-    public static void printAlbumDataEditorSubmenu(){
-	MenuPrinter.separatorLine();
-	System.out.println("Please chose a song, type its name to enter it" + "\n" +
-			    "1. Exit"
+	System.out.println("1. Add new song" + "\n" +
+			    "2. Exit"
 	);
     }
     
@@ -75,6 +67,14 @@ public class MenuPrinter {
 	MenuPrinter.separatorLine();
 	System.out.println("Please chose a playlist, type its name to enter it" + "\n" +
 			    "1. Exit"
+	);
+    }
+    
+    public static void printPlaylistDataEditorSubmenuWhenNoPlaylist(){
+	MenuPrinter.separatorLine();
+	System.out.println("There are no playlists. Do you want to create a new playlist?" + "\n" +
+			    "1. Yes" + "\n" +
+			    "2. No"
 	);
     }
     
