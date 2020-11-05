@@ -37,6 +37,11 @@ public class PlaylistManager {
 	playlists.remove(name);
     }
     
+    public PlaylistManager modifyPlaylist(String name, List<Song> songs){
+	playlists.replace(name, new Playlist(name, songs));
+	return this;
+    }
+    
     public void listPlaylists(){
 	playlists.keySet().forEach(name -> System.out.println(name));
     }

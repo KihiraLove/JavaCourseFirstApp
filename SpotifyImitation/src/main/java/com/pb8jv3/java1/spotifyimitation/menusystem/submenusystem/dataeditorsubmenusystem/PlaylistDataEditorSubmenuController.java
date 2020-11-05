@@ -35,17 +35,19 @@ public class PlaylistDataEditorSubmenuController {
 		}
 	    } else {
 		MenuPrinter.printPlaylistDataEditorSubmenu();
+		dataManager.getPlaylistManager().listPlaylists();
 		input = MainMenuController.userInput();
 		switch (input){
 		    case "1":
-
-			break;
-		    case "2":
 			breaker = false;
 			MenuPrinter.separatorLine();
 			break;
 		    default:
-			System.out.println("Invalid input");
+			if(dataManager.getPlaylistManager().getPlaylists().containsKey(input)){
+			    dataManager = PlaylistDataEditorSubmenuController.addSongsToPlaylist(dataManager, input);
+			} else {
+			    System.out.println("Invalid input");
+			}
 		}
 	    }
 	}
@@ -83,4 +85,26 @@ public class PlaylistDataEditorSubmenuController {
 	return dataManager;
     }
     
+    
+    private static DataManager addSongsToPlaylist(DataManager dataManager, String name) {
+	String input;
+	List<Song> songs = dataManager.getPlaylistManager().getPlaylist(name).getSongs();
+	Boolean breaker = true;
+	while(breaker){
+	    dataManager.getSongManager().listSongs();
+	    System.out.println("Type the name of the song you want to add, type 0 to Exit:");
+	    input = MainMenuController.userInput();
+	    for(Song song :  dataManager.getSongManager().getSongs()){
+		if(song.getName().equals(input)){
+		    songs.add(song);
+		} else if(input.equals("0")){
+		    breaker = false;
+		} else {
+		    System.out.println("Song does not exist");
+		}
+	    }
+	dataManager.setPlaylistManager(dataManager.getPlaylistManager().addPlaylist(name, songs));
+	}
+	return dataManager;
+    }
 }

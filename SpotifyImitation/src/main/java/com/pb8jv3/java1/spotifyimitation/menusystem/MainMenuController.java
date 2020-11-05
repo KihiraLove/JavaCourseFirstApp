@@ -2,6 +2,7 @@ package com.pb8jv3.java1.spotifyimitation.menusystem;
 
 import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.PlayMenuController;
 import com.pb8jv3.java1.spotifyimitation.datamanager.DataManager;
+import com.pb8jv3.java1.spotifyimitation.menusystem.submenusystem.DataEditorMenuController;
 import java.util.Scanner;
 /**
  *
@@ -28,7 +29,7 @@ public class MainMenuController {
 		    PlayMenuController.init(dataManager);
 		    break;
 		case "2":
-			//open data editor menu
+		    dataManager = DataEditorMenuController.init(dataManager);
 		    break;
 		case "3":
 		    breaker = false;
