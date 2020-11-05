@@ -26,7 +26,7 @@ public class DataEditorMenuController {
 		case "2":
 		    dataManager = PlaylistDataEditorSubmenuController.init(dataManager);
 		    break;
-		case "4":
+		case "3":
 		    breaker = false;
 		    MenuPrinter.separatorLine();
 		    break;

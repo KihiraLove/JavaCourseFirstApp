@@ -66,7 +66,8 @@ public class MenuPrinter {
     public static void printPlaylistDataEditorSubmenu(){
 	MenuPrinter.separatorLine();
 	System.out.println("Please chose a playlist, type its name to enter it" + "\n" +
-			    "1. Exit"
+			    "1. Add a new playlist" + "\n" +
+			    "2. Exit"
 	);
     }
     

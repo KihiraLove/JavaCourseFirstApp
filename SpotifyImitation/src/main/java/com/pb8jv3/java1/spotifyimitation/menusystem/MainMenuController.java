@@ -44,6 +44,10 @@ public class MainMenuController {
     
     public static String userInput(){
 	System.out.println("Enter your choice: ");
-	return new Scanner(System.in).next(); //This is a weird method to solve a bug that is caused by the new line at the end of Scanner.nextInt()
+	return new Scanner(System.in).nextLine();
+    }
+    
+    public static String userInputNoChoice(){
+	return new Scanner(System.in).nextLine();
     }
 }

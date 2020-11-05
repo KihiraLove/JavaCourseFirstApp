@@ -18,6 +18,9 @@ public class PlaylistSubmenuController {
 	while(breaker){
 	    MenuPrinter.printPlaylistSubmenu();
 	    dataManager.getPlaylistManager().listPlaylists();
+	    if(dataManager.getPlaylistManager().getPlaylists().isEmpty()){
+		System.out.println("There are no playlists, consider creating one in the data edit menu");
+	    }
 	    String input = MainMenuController.userInput();
 	    switch (input){
 		case "1":

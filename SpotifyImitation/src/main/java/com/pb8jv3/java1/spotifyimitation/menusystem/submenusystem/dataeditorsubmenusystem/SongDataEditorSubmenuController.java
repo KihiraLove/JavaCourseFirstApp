@@ -25,7 +25,7 @@ public class SongDataEditorSubmenuController {
 		    Song song = new Song();
 		    do{
 			System.out.println("Enter song name: ");
-			input = MainMenuController.userInput();
+			input = MainMenuController.userInputNoChoice();
 			if(!input.equals("")){
 			    song.setName(input);
 			} else {
@@ -34,7 +34,7 @@ public class SongDataEditorSubmenuController {
 		    } while(input.equals(""));
 		    do{
 			System.out.println("Enter songa artist: ");
-			input = MainMenuController.userInput();
+			input = MainMenuController.userInputNoChoice();
 			if(!input.equals("")){
 			    song.setArtist(input);
 			} else {
@@ -43,7 +43,7 @@ public class SongDataEditorSubmenuController {
 		    } while(input.equals(""));
 		    do{
 			System.out.println("Enter songs style: ");
-			input = MainMenuController.userInput();
+			input = MainMenuController.userInputNoChoice();
 			if(!input.equals("")){
 			    song.setStyle(input);
 			} else {
@@ -52,7 +52,7 @@ public class SongDataEditorSubmenuController {
 		    } while(input.equals(""));
 		    do{
 			System.out.println("Enter songs album name: ");
-			input = MainMenuController.userInput();
+			input = MainMenuController.userInputNoChoice();
 			if(!input.equals("")){
 			    song.setAlbumName(input);
 			} else {
@@ -61,7 +61,7 @@ public class SongDataEditorSubmenuController {
 		    } while(input.equals(""));
 		    do{
 			System.out.println("Enter songs length: ");
-			input = MainMenuController.userInput();
+			input = MainMenuController.userInputNoChoice();
 			if(!input.equals("")){
 			    try{
 				song.setLength(Integer.parseInt(input));

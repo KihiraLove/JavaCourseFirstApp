@@ -33,6 +33,9 @@ public class SpotifyImitationApp {
 	     */
 	    MainMenuController menu = new MainMenuController(new DataManager(ReadFromFile.readSongs(), ReadFromFile.readPlaylists()));
 
+	    /**
+	     * Initializes the menu system
+	     */
 	    menu.init();
 	    
 	    /**
@@ -44,6 +47,7 @@ public class SpotifyImitationApp {
 	     * Writes each playlist into their corresponding file
 	     */
 	    WriteToFile.write(menu.getDataManager().getPlaylistManager());
+	    
 	} catch (FailedDirectoryCreationException | FailedFileCreationException | FileNotFoundException ex) {
 	    System.out.println(ex);
 	}

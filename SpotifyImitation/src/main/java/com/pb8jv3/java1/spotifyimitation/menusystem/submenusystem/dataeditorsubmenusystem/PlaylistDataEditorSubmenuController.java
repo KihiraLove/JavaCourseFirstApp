@@ -19,7 +19,7 @@ public class PlaylistDataEditorSubmenuController {
 	Boolean breaker = true;
 	while(breaker){
 	    String input;
-	    if(dataManager.getPlaylistManager() == null){
+	    if(dataManager.getPlaylistManager().getPlaylists().isEmpty()){
 		MenuPrinter.printPlaylistDataEditorSubmenuWhenNoPlaylist();
 		input = MainMenuController.userInput();
 		switch (input){
@@ -39,6 +39,9 @@ public class PlaylistDataEditorSubmenuController {
 		input = MainMenuController.userInput();
 		switch (input){
 		    case "1":
+			dataManager = PlaylistDataEditorSubmenuController.createPlaylist(dataManager);
+			break;
+		    case "2":
 			breaker = false;
 			MenuPrinter.separatorLine();
 			break;
@@ -58,23 +61,28 @@ public class PlaylistDataEditorSubmenuController {
 	String input;
 	do{
 	    System.out.println("Enter name of playlist: ");
-	    input = MainMenuController.userInput();
+	    input = MainMenuController.userInputNoChoice();
 	    if(!input.equals("")){
 		String name = input;
 		List<Song> songs = new ArrayList<>();
 		Boolean breaker = true;
 		while(breaker){
 		    dataManager.getSongManager().listSongs();
+		    MenuPrinter.separatorLine();
 		    System.out.println("Type the name of the song you want to add, type 0 to Exit:");
 		    input = MainMenuController.userInput();
+		    Boolean songAdded = false;
 		    for(Song song :  dataManager.getSongManager().getSongs()){
 			if(song.getName().equals(input)){
 			    songs.add(song);
-			} else if(input.equals("0")){
-			    breaker = false;
-			} else {
-			    System.out.println("Song does not exist");
+			    songAdded = true;
+			    break;
 			}
+		    }
+		    if(songAdded){
+			System.out.println("Song added");
+		    } else {
+			System.out.println("Song doesn't exists");
 		    }
 		    dataManager.setPlaylistManager(dataManager.getPlaylistManager().addPlaylist(name, songs));
 		}

@@ -34,7 +34,7 @@ public class WriteToFile {
     
     public static void write(PlaylistManager playlistManager) {
 	playlistManager.getPlaylists().values().forEach(playlist -> {
-	    try (FileWriter writer = new FileWriter(FileLocation.getPlaylistPath().toString() + playlist.getName())) {
+	    try (FileWriter writer = new FileWriter(FileLocation.getPlaylistPath().toString() + "/" + playlist.getName() + ".txt")) {
 		playlist.getSongs().forEach(song -> {
 		    try {
 			writer.write(song.printable());

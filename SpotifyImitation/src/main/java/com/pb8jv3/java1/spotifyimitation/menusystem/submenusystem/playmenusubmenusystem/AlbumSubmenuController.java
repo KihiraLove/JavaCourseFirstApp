@@ -27,6 +27,7 @@ public class AlbumSubmenuController {
 		default:
 		    Album album = dataManager.getAlbumManager().getAlbum(input);
 		    if(album != null){
+			MenuPrinter.separatorLine();
 			album.playSongs();
 		    } else {
 			System.out.println("Album doesn't exist");
