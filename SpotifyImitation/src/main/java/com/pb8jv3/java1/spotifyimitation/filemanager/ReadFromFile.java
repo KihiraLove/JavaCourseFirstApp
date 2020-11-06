@@ -3,7 +3,7 @@ package com.pb8jv3.java1.spotifyimitation.filemanager;
 import com.pb8jv3.java1.spotifyimitation.datamanager.data.Playlist;
 import com.pb8jv3.java1.spotifyimitation.datamanager.SongManager;
 import com.pb8jv3.java1.spotifyimitation.datamanager.data.Song;
-import com.pb8jv3.java1.spotifyimitation.datamanager.data.utility.FileLocation;
+import com.pb8jv3.java1.spotifyimitation.filemanager.utility.FileLocation;
 import com.pb8jv3.java1.spotifyimitation.datamanager.PlaylistManager;
 import java.io.File;
 import java.io.FileNotFoundException;

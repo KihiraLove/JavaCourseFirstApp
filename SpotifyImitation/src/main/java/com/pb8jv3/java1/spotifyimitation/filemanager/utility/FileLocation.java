@@ -1,4 +1,4 @@
-package com.pb8jv3.java1.spotifyimitation.datamanager.data.utility;
+package com.pb8jv3.java1.spotifyimitation.filemanager.utility;
 
 import java.io.File;
 import java.nio.file.Path;

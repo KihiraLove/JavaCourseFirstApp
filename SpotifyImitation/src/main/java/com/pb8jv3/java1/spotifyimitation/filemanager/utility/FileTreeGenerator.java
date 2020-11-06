@@ -1,7 +1,6 @@
 package com.pb8jv3.java1.spotifyimitation.filemanager.utility;
 
 import com.pb8jv3.java1.spotifyimitation.datamanager.SongManager;
-import com.pb8jv3.java1.spotifyimitation.datamanager.data.utility.FileLocation;
 import com.pb8jv3.java1.spotifyimitation.filemanager.WriteToFile;
 import java.io.File;
 import java.io.IOException;
