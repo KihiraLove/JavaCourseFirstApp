@@ -2,3 +2,6 @@
 *.txt
 *.txt
 *.html
+SpotifyImitation/target/site/apidocs/package-list
+SpotifyImitation/target/site/apidocs/script.js
+SpotifyImitation/target/site/apidocs/stylesheet.css
