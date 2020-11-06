@@ -62,7 +62,7 @@ public class PlaylistDataEditorSubmenuController {
 	do{
 	    System.out.println("Enter name of playlist: ");
 	    input = MainMenuController.userInputNoChoice();
-	    if(!input.equals("")){
+	    if(!input.equals("") && !dataManager.getPlaylistManager().getPlaylists().containsKey(input)){
 		String name = input;
 		List<Song> songs = new ArrayList<>();
 		Boolean breaker = true;

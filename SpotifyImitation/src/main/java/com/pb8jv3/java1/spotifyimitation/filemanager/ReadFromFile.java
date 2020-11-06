@@ -41,7 +41,7 @@ public class ReadFromFile {
 	    File[] listOfPlaylists = folder.listFiles();
 
 	    for(File playlist : listOfPlaylists) {
-		playlists.put(playlist.getName(), ReadFromFile.playlistFromFile(playlist.getName(), playlist));
+		playlists.put(playlist.getName().substring(0, playlist.getName().length()-4), ReadFromFile.playlistFromFile(playlist.getName().substring(0, playlist.getName().length()-4), playlist));
 	    }
 
 	    return new PlaylistManager(playlists);
