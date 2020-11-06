@@ -9,8 +9,4 @@ public class FailedFileCreationException extends Exception{
     public FailedFileCreationException(String string) {
 	super(string);
     }
-
-    FailedFileCreationException() {
-	throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

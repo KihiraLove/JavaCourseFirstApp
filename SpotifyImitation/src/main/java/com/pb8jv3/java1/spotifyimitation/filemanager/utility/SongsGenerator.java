@@ -13,7 +13,7 @@ public class SongsGenerator {
     private SongsGenerator(){
     }
     
-    public static  List<Song> generateSongs() {
+    public static List<Song> generateSongs() {
 	System.out.println("Generating random song library");
 	List<Song> songs = new ArrayList<>();
 	songs.add(new Song("Perfect", "Ed Sheeran", "Pop", 263, "Perfect Duett"));
