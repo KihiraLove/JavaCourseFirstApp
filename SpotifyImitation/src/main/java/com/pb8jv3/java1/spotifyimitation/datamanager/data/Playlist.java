@@ -42,7 +42,10 @@ public class Playlist {
     }
     
     public void listSongs(){
-	songs.forEach(song -> {System.out.println(song.getName());});
+	if(!songs.isEmpty())
+	    songs.forEach(song -> {System.out.println(song.getName());});
+	else
+	    System.out.println("Playlist is empty, consider addig songs to it from the data editor menu");
     }
     
     public void playSongs(){
